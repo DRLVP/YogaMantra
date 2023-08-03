@@ -1,0 +1,69 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #0a2fff;
+    --second-color: hsl(328, 100%, 66%);
+    --gradient-color: linear-gradient(75deg,
+            var(--second-color) 12%,
+            var(--first-color) 90%);
+    --first-color-light: hsl(260, 88%, 92%);
+    --first-color-dark: hsl(260, 80%, 16%);
+    --title-color: hsl(260, 80%, 18%);
+    --text-color: hsl(260, 24%, 32%);
+    --text-color-light: hsl(260, 16%, 65%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(260, 100%, 97%);
+    --container-color: hsl(0, 0%, 100%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --second-font: "Lora", serif;
+    --biggest-font-size: 2.75rem;
+    --bigger-font-size: 2rem;
+    --big-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title {
+    text-align: center;
+    font-size: var(--bigger-font-size);
+    font-family: var(--second-font);
+    margin-bottom: 1.5rem;
+}
+
+.main {
+    overflow: hidden;
+    /* For animation ScrollReveal */
+}

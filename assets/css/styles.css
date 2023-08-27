@@ -199,7 +199,7 @@ body.dark-theme {
 }
 
 /* Show menu */
-.show-menu {
+.nav__menu.show-menu {
   right: 0;
 }
 
